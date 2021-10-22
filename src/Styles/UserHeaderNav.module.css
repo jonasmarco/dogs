@@ -1,0 +1,129 @@
+.nav {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav a,
+.nav button {
+    align-items: center;
+    background: #eee;
+    border-radius: 0.2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: 0.1s;
+    width: 40px;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav button:hover,
+.nav button:focus {
+    background: white;
+    border-color: #333;
+    box-shadow: 0 0 0 3px #eee;
+    outline: none;
+}
+
+.nav a.active {
+    background: white;
+    border-color: #fb1;
+    box-shadow: 0 0 0 3px #fea;
+}
+
+.nav a.active svg > * {
+    fill: #fb1;
+}
+
+.mobileButton {
+    align-items: center;
+    background: #eee;
+    border-radius: 0.2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 0;
+    transition: 0.1s;
+    width: 40px;
+}
+
+.mobileButton::after {
+    background: currentColor;
+    border-radius: 2px;
+    box-shadow: 0 6px currentColor, 0 -6px currentColor;
+    content: '';
+    display: block;
+    height: 2px;
+    transition: 0.2s;
+    width: 1.2rem;
+}
+
+.mobileButton:focus,
+.mobileButton:hover,
+.mobileButtonActive {
+    background: white;
+    border-color: #fb1;
+    box-shadow: 0 0 0 3px #fea;
+    color: #fb1;
+    outline: none;
+}
+
+.mobileButtonActive::after {
+    box-shadow: 0 8px currentColor, 0 -8px currentColor;
+    height: 4px;
+    transform: rotate(90deg);
+    width: 4px;
+}
+
+.navMobile {
+    background: white;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    opacity: 0;
+    padding: 0 1rem;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    transform: translateX(-10px);
+    z-index: -1;
+}
+
+.navMobileActive {
+    opacity: 1;
+    pointer-events: initial;
+    transform: initial;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.navMobile a,
+.navMobile button {
+    align-items: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.navMobile a:hover svg > *,
+.navMobile button:hover svg > * {
+    fill: #fb1;
+}
+
+.navMobile button {
+    border-bottom: none;
+}
+
+.navMobile svg {
+    margin-right: 0.5rem;
+}

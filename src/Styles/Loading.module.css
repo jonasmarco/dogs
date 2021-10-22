@@ -1,0 +1,22 @@
+.wrapper {
+  background: rgb(248 248 248 / 80%);
+  display: flex;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.loading {
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: auto;
+  padding-left: 5px;
+  width: 80px;
+}
