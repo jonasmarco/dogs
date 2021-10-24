@@ -21,3 +21,33 @@ Alguns tópicos presentes no curso
 
 ## Algumas Screenshots
 
+### Feed
+![image description](screenshots/Feed.png)
+
+### Preview
+![image description](screenshots/Preview.png)
+
+### Detalhe
+![image description](screenshots/Detail.png)
+
+### Commentários
+![image description](screenshots/Comment.png)
+
+### Login
+![image description](screenshots/Login.png)
+
+### Cadastro
+![image description](screenshots/Sigin.png)
+
+### Recuperar Senha
+![image description](screenshots/RecoveryPassword.png)
+
+### Adicionar Foto
+![image description](screenshots/PostPhoto.png)
+
+# Como executar o projeto
+```console
+git clone https://github.com/jonasmarco/dogs
+yarn install
+yarn start
+```
